@@ -1,0 +1,154 @@
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Admin's Dashboard</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+   
+
+   <!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <br>
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" routerLink="/dashboard">
+              <i class="bi bi-person"></i>
+              <span>List des cours</span>
+            </a>
+          </li>
+
+      <li class="nav-item">
+        <li class="nav-item">
+            <a class="nav-link collapsed" routerLink="/ajouter"  >
+              <i class="bi bi-person"></i>
+              <span>Ajouter</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <li class="nav-item">
+                <a class="nav-link collapsed" routerLink="/modifier">
+                  <i class="bi bi-person"></i>
+                  <span>Modifier</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" >
+                      <i class="bi bi-person"></i>
+                      <span>Supprimer</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" >
+                          <i class="bi bi-person"></i>
+                          <span>Profile</span>
+                        </a>
+                      </li>
+</ul>
+  </aside>
+<br>
+<br>
+<br>
+  <main id="main" class="main">
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Modifier un hotel</h5>
+      <form   novalidate> 
+    <div class="row mb-3">
+      <label >ID</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" formControlName="id">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label >name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+    </div>
+    
+    <div class="row mb-3">
+      <label >promotion</label>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" formControlName="promotion">
+          <label>
+            oui
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" formControlName="promotion">
+          <label>
+            Non
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputNumber" class="col-sm-2 col-form-label" formControlName="img">Images</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="file" id="formFile">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword" class="col-sm-2 col-form-label" formControlName="adresse">Adresse</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" style="height: 50px"></textarea>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="col-sm-2 col-form-label">Multi Select</label>
+      <div class="col-sm-10">
+        <select class="form-select" multiple aria-label="multiple select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-sm-2 col-form-label">Ajouter</label>
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary" >Ajouter</button>
+        <input type="button" value="Vider" class="btn btn-primary">
+      </div>
+    </div>
+    
+        
+     
+
+  </form><!-- End General Form Elements -->
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
